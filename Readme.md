@@ -1,1 +1,1 @@
-# Expenses Management System
+# Examination Management System
