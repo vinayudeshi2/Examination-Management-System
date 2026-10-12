@@ -1,0 +1,6 @@
+import os                                                                                                                                                                                               
+class Config:                                                                                                                                                                                     
+    SECRET_KEY = os.environ.get("SECRET_KEY", "dev-secret-key")                                                                                                                         
+    SECURITY_PASSWORD_SALT = os.environ.get("SECURITY_PASSWORD_SALT", "dev-password-salt-change-me")                                                                                              
+    SECURITY_PASSWORD_HASH = "bcrypt"                                                                                                                                                             
+    SQLALCHEMY_DATABASE_URI = "sqlite:///emp.db"                                                                                                                                                  
